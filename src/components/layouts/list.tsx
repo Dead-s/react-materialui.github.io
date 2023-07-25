@@ -9,7 +9,7 @@ function List_component() {
 
     const maplist = new Map();
     useEffect(() => {
-        fetch('/src/data/list.json').then(res => res.json())
+        fetch('./src/data/list.json').then(res => res.json())
             .then(resdata2 => {
                 listdata ;
                 setListdata(resdata2);
