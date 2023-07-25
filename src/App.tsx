@@ -1,6 +1,6 @@
 import Form from './components/page_one.tsx'
 import './App.css'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import {  Route, Routes } from 'react-router-dom'
 import Second_page from './components/secnod_page.tsx'
 
 function App() {
