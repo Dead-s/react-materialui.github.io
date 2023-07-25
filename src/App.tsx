@@ -8,8 +8,8 @@ function App() {
   return (
     <>
         <Routes>
-          <Route path='/react-materialui.github.io/' element={<Form />} />
-          <Route path='/react-materialui.github.io/second_page/*' element={<Second_page />} />
+          <Route path='/' element={<Form />} />
+          <Route path='/second_page/*' element={<Second_page />} />
           {/* <Route path='/second_page/*' element={<Second_page authorized={false} />} /> */}
         </Routes>
     </>
