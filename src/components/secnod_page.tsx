@@ -10,7 +10,7 @@ function Second_page() {
     if (!localStorage.getItem('auth')) {
         return (
             <Routes>
-                <Route path='/react-materialui.github.io/' element={<Form />} />
+                <Route path='/' element={<Form />} />
             </Routes>
         )
     }

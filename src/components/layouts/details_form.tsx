@@ -37,7 +37,7 @@ function Detailsform() {
         toast.info('Redirecting...', { position: toast.POSITION.TOP_CENTER, autoClose: 1500, theme: 'dark' });
 
         setTimeout(() => {
-            navigate('/react-materialui.github.io/second_page/*');
+            navigate('/second_page/*');
         }, 1600);
     }
 
