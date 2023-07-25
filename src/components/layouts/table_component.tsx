@@ -15,6 +15,7 @@ function Table_component() {
     }, []);
 
     function handleChangePage(event: any, newpage: any) {
+        console.log(event);
         setpg(newpage);
     }
 

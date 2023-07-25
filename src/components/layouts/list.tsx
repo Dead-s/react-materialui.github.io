@@ -11,6 +11,7 @@ function List_component() {
     useEffect(() => {
         fetch('/src/data/list.json').then(res => res.json())
             .then(resdata2 => {
+                listdata ;
                 setListdata(resdata2);
                 nestedObject(resdata2)
             });
@@ -21,7 +22,7 @@ function List_component() {
             if (key == dpt) {
                 checkbox[key] = e.target.checked;
                 if (key == 'department0') {
-                    checkbox['sub_departments1']  = e.target.checked;
+                    checkbox['sub_departments1'] = e.target.checked;
                     checkbox['sub_departments2'] = e.target.checked;
                 }
 
