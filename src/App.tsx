@@ -10,7 +10,7 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path='/' element={<Form />} />
-          <Route path='/second_page/*' element={<Second_page />} />
+          <Route path='second_page/*' element={<Second_page />} />
           {/* <Route path='/second_page/*' element={<Second_page authorized={false} />} /> */}
         </Routes>
       </HashRouter>

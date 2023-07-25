@@ -1,5 +1,4 @@
-import { Route, Routes } from "react-router-dom";
-import Form from "./page_one";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { Grid } from "@mui/material";
 import List_component from "./layouts/list";
 import Table_component from "./layouts/table_component";
@@ -10,7 +9,7 @@ function Second_page() {
     if (!localStorage.getItem('auth')) {
         return (
             <Routes>
-                <Route path='/' element={<Form />} />
+                <Route path='*' element={<Navigate to='/' />} />
             </Routes>
         )
     }

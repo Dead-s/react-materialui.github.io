@@ -3,18 +3,31 @@ import { useEffect, useState } from "react";
 
 function List_component() {
 
-    const [listdata, setListdata] = useState([]);
+    const [listdata, setListdata] = useState<any>([]);
     const [listdt, setListdt] = useState<any>([]);
     const [checkbox, setCheckbox] = useState<any>([])
-
+    const json_data = [
+        {
+            "department": "customer_service",
+            "sub_departments": [
+                "support",
+                "customer_success"
+            ]
+        },
+        {
+            "department": "design",
+            "sub_departments": [
+                "graphic_design",
+                "product_design",
+                "web_design"
+            ]
+        }
+    ];
     const maplist = new Map();
     useEffect(() => {
-        fetch('./src/data/list.json').then(res => res.json())
-            .then(resdata2 => {
-                listdata ;
-                setListdata(resdata2);
-                nestedObject(resdata2)
-            });
+        listdata;
+        setListdata(json_data);
+        nestedObject(json_data)
     }, []);
 
     const handleChange = (e: any, key: any) => {

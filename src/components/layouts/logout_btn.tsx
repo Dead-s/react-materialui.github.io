@@ -2,7 +2,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { IconButton } from '@mui/material';
 import LogoutIcon from '@mui/icons-material/Logout';
-import {useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Logout_btn() {
     let navigate = useNavigate();
@@ -11,7 +11,7 @@ function Logout_btn() {
         localStorage.removeItem('auth');
         toast.info('Logged out', { position: toast.POSITION.TOP_CENTER, autoClose: 1000, theme: 'dark' });
         setTimeout(() => {
-            navigate('/react-materialui.github.io/');
+            navigate('/');
         }, 1500);
     }
 
